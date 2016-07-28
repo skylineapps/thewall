@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'messages/delete'
 
+  get 'messages/:id' => 'messages#show'
+
   get 'wall/index'
 
   root 'users#index'
